@@ -9,6 +9,7 @@
 
   --primary-color-red: #E13984;
   --secondary-color-red: #E96FA5;
+  --third-color-red: #F1A5C7;
 }
 
 /*HTML and BODY*/
@@ -119,6 +120,7 @@ button:focus {
 .section-title {
   text-transform: uppercase;
   font-weight: 600;
+  text-shadow: 2px 2px 5px rgba(150, 150, 150, 0.4);
 }
 .section-title-row {
   padding-bottom: 30px;
@@ -156,6 +158,27 @@ button:focus {
   box-shadow: 9px 2px 14px -9px rgba(0,0,0,0.75);
   border-radius: 30px;
 }
+.btn-secondary:hover {
+  background-color: var(--secondary-color-red);
+  border-color: var(--secondary-color-red);
+}
+.btn-secondary:focus {
+  background-color: var(--secondary-color-red);
+  outline: none !important;
+}
+.btn-secondary:active {
+  background-color: var(--third-color-red) !important;
+}
+.btn-minimal {
+  background: rgba(0,0,0,0.0);
+  border: 2px solid white;
+  text-transform: uppercase;
+  min-width: 160px;
+  letter-spacing: 1px;
+}
+.btn-submit {
+  min-width: 160px;
+}
 #title-elipse {
   letter-spacing: 10px;
   margin-left: 10px;
@@ -182,7 +205,8 @@ button:focus {
   width: 100%;
   height: 100%;
   top: 0;
-  background-image: linear-gradient(to right top, #e13984, #c760bc, #9882e0, #639ceb, #42afe3, #48b8df, #57c1db, #6ac9d6, #6ed1de, #72d9e7, #77e1ef, #7be9f8);
+  /* background-image: linear-gradient(to right top, #e13984, #c760bc, #9882e0, #639ceb, #42afe3, #48b8df, #57c1db, #6ac9d6, #6ed1de, #72d9e7, #77e1ef, #7be9f8); */
+  background-image: linear-gradient(to top, #f1a5c7, #d9aadd, #b9b1eb, #94b8ed, #75bde4, #6ec1e1, #6ac5dc, #6ac9d6, #6ed1de, #72d9e7, #77e1ef, #7be9f8);
 }
 
 .landing h1 {
@@ -191,24 +215,25 @@ button:focus {
   text-transform: uppercase;
   margin: 0;
   position: relative;
-  top: 175px;
+  top: 90px;
   left: 0%;
   color: white;
   text-align: left;
+  text-shadow: 2px 2px 5px rgba(150, 150, 150, 0.4);
 }
 .landing p {
   position: relative;
   display: inline-block;
   font-size: 1.5rem;
-  top: 175px;
+  top: 90px;
   margin: 0;
   text-align: left;
   color: white;
-  /* left: -20%; */
+  text-shadow: 2px 2px 5px rgba(150, 150, 150, 0.4);
 }
 .landing button {
   position: relative;
-  top: 220px;
+  top: 150px;
   width: 140px;
   margin-bottom: 10px;
 }
@@ -225,6 +250,22 @@ button:focus {
 #scroll-down a i:hover {
   transform: scale(1.6);
   color: var(--primary-color-red)
+}
+.graphic-landing {
+    transform: scale(0.8);
+    padding: 0;
+    position: relative;
+    top: 30%;
+    margin: 0 auto;
+    margin-left: -50px;
+}
+.graphic-landing-large {
+  transform: scale(1);
+  padding: 0;
+  position: relative;
+  top: 30%;
+  margin: 0 auto;
+  margin-left: -50px;
 }
 
 
@@ -283,7 +324,7 @@ button:focus {
   width: 100%;
   /*height: 100%;*/
   margin-top: 100px;
-  background-color: var(--third-color-black);
+  background-color: var(--primary-color-blue);
 }
 #feedback-title-row {
   padding-top: 30px;
@@ -320,7 +361,7 @@ button:focus {
   /*margin: 0;*/
   width: 270px;
   height: 80px;
-  background-color: var(--secondary-color-blue);
+  background-color: var(--secondary-color-red);
   border-radius: 5px;
   z-index: 2;
   position: absolute;
@@ -390,7 +431,7 @@ button:focus {
 }
 .pricing-card {
   max-width: 310px;
-  min-height: 450px;
+  min-height: 400px;
   margin-bottom: 30px;
   border-radius: 2px;
   bottom: 0;
@@ -554,7 +595,7 @@ button:focus {
     font-size: 3rem;
   }
   .landing button {
-    top: 260px;
+    top: 200px;
   }
   /* .landing p {
     margin-top: 50px;
@@ -593,16 +634,19 @@ button:focus {
   #feedback-last {
     left: 0;
   }
+  .graphic-landing-large {
+    display: none;
+  }
 }
 @media (min-width: 767px) {
   .landing p {
-    top: 250px;
+    top: 90px;
   }
   .landing h1 {
-    top: 250px;
+    top: 90px;
   }
   .landing button {
-    top: 270px;
+    top: 120px;
   }
 }
 
@@ -680,4 +724,41 @@ button:focus {
   transform:         translateY(12px); 
 }
 
+
+
+
+.bounce-up .subject {
+  opacity: 0;
+  -moz-transition: all 700ms ease-out;
+  -webkit-transition: all 700ms ease-out;
+  -o-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+  -moz-transform: translate3d(0px, 200px, 0px);
+  -webkit-transform: translate3d(0px, 200px, 0px);
+  -o-transform: translate(0px, 200px);
+  -ms-transform: translate(0px, 200px);
+  transform: translate3d(0px, 200, 0px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.bounce-up.in-view .subject {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.subject {
+  float: left;
+  width: 100%;
+  margin: 0% 1.33% 2.66% 1.33%;
+  background: #F5F5F5;
+  padding: 15px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  border: solid 1px #EAEAEA;
+}
 /*-----------------------------------------------------------------------------------------------------------------------------------------------*/

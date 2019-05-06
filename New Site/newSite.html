@@ -9,7 +9,6 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- CSS File -->
     <link rel="stylesheet" type="text/css" href="css/app.css">
-    <link rel="stylesheet" type="text/css" href="css/devices.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Google Fonts -->
@@ -56,7 +55,7 @@
                     <a class="nav-link" href="#statistics">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#pricing">Pricing</a>
                   </li>
                 </ul>
               </div>
@@ -68,96 +67,21 @@
 
     <!-- LANDING CONTENT START -->
     <section class="landing">
-        <!-- <div class="container text-center landing-content">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Turn your idea to reality.</h1>
-                    <p>At Brickwave we create your website exactly to <strong class="highlight-red">your standards</strong>, using the latest and greatest technology. You can be sure of your desired <strong class="highlight-red">results</strong>.</p>
-                    <button class="btn btn-primary btn-lg">Get in Contact</button>
-                    <div id="scroll-down"><a href="#about-area"><i class="fas fa-angle-down"></i></a></div>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col-6 col-xs-12">
-                    <div class="devices-1">
-                        <div class="notebook">
-                            <div class="screen"></div>
-                            <div class="keyboard"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-xs-12">
-                    <div class="devices-2">
-                        <div class="iphone">
-                            <div class="screen"></div>
-                        </div>
-                        <div class="landing-content">
-                            <h1>Test</h1>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </div> -->
-
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col-8 col-sm-9">
-                    <div class="devices-1">
-                        <div class="notebook">
-                            <div class="screen"></div>
-                            <div class="keyboard"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-2 col-sm-2">
-                    <div class="devices-2">
-                        <div class="iphone">
-                            <div class="screen"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                    <div class="row">
-                            <div class="col-8 col-sm-9">
-                                <p>At Brickwave we create your website exactly to <strong class="highlight-red">your standards</strong>, using the latest and greatest technology. You can be sure of your desired <strong class="highlight-red">results</strong>.</p>
-                            </div>
-                        
-                            <div class="col-2 col-sm-2">
-                                <h1>Turn Your Idea to Reality</h1>
-                            </div>
-                        </div>
-            </div> -->
-
             <div class="container">
                 <div class="row">
                     <div class="col-8">
-                        <div class="devices-1">
-                            <div class="notebook">
-                                <div class="screen"></div>
-                                <div class="keyboard"></div>
-                            </div>
-                        </div>
+                        <img src="/New Site/src//svg/mobile.svg" class="graphic-svg graphic-landing" alt="">
                     </div>
                     <div class="col-4">
-                        <div class="devices-2">
-                            <div class="iphone">
-                                <div class="screen"></div>
-                            </div>
-                        </div>
+                        <img src="/New Site/src//svg/bricks.svg" class="graphic-svg graphic-landing-large" alt="">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-4">
                         <h1><strong>Turn Your Idea to Reality</strong></h1>
-                        <button class="btn btn-primary">Find Out More!</button>
-                        <button class="btn btn-secondary">Contact Us!</button>
+                        <a href="#about-area"><button class="btn btn-primary btn-minimal">Find Out More!</button></a>
+                        <button class="btn btn-secondary btn-minimal" data-toggle="modal" data-target="#contactModal">Contact Us!</button>
                     </div>
                     <div class="col-8">
                         <p class="text-right">At Brickwave we create your website exactly to <strong class="highlight-red">your standards</strong>, using the latest and greatest technology. You can be sure of your desired <strong class="highlight-red">results</strong>.</p>
@@ -230,7 +154,7 @@
 
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4"> 
-                    <div class="card feedback-card">
+                    <div class="card feedback-card animation-element bounce-up">
                       <div class="card-header feedback-card-header">
                         <h3>SharePoint Front End Dashboard</h3>
                       </div>
@@ -317,7 +241,7 @@
     
 
     <!-- PRICING SECTION START -->
-    <section class="pricing">
+    <section class="pricing"><span><a id="pricing"></a></span>
         <div class="container">
             <div class="row section-title-row">
                 <div class="col-12">
@@ -350,10 +274,6 @@
                             <li>Monthly Backups</li>
                             <li>UK Datacentre</li>
                         </ul>
-                        <br>
-                        <div class="col-12 text-center">
-                            <button class="btn btn-md btn-secondary price-button">I'm Interested!</button>
-                        </div>
                       </div>
                     </div>
                 </div>    
@@ -376,10 +296,6 @@
                             <li>Monthly Backups</li>
                             <li>UK Datacentre</li>
                         </ul>
-                        <br>
-                        <div class="col-12 text-center">
-                            <button class="btn btn-md btn-secondary price-button">I'm Interested!</button>
-                        </div>
                       </div>
                     </div>
                 </div>
@@ -403,9 +319,6 @@
                             <li>UK Datacentre</li>
                             <li>Analytics</li>
                         </ul>
-                        <div class="col-12 text-center">
-                            <button class="btn btn-md btn-secondary price-button" id="price-button-last">I'm Interested!</button>
-                        </div>
                       </div>
                     </div>
                 </div>
@@ -428,7 +341,7 @@
                             <h5>What are you Waiting for!</h5>
                             <hr>
                             <p>Your new site could be just around the corner, get in contact and a further discussion can be had to determine your needs!</p>
-                            <button class="btn btn-primary btn-lg">Contact Us</button>
+                            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contactModal">Contact Us</button>
                         </div>
 
                     </div>
@@ -443,97 +356,106 @@
         </div>
     </section>
 
-    <form action="https://formspree.io/jacksshoughton@gmail.com" method="POST">
+    <!-- <form action="https://formspree.io/jacksshoughton@gmail.com" method="POST">
         <input type="text" name="name">
         <input type="email" name="_replyto">
         <input type="text" name="details">
         <input type="submit" value="Send">
-    </form>
-
-
-    <form class="form-horizontal" action="https://formspree.io/jack@brickwave.uk" method="POST">
-        <fieldset>
-        
-        <!-- Form Name -->
-        <legend>Contact</legend>
-        
-        <!-- Text input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="name">Name</label>  
-          <div class="col-md-4">
-          <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md" required="">
+    </form> -->
+      
+      <!-- Modal -->
+      <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Send us a Message</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="material-icons">close</i></span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <form class="form-horizontal" action="https://formspree.io/jack@brickwave.uk" method="POST">
+                        <fieldset>
+                        
+                        <!-- Form Name -->
+                        <legend>Enter Your Details Below</legend>
+                        
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="name">Name</label>  
+                          <div class="col-md-12">
+                          <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md" required="">
+                            
+                          </div>
+                        </div>
+                        
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="_replyto">Email</label>  
+                          <div class="col-md-12">
+                          <input id="_replyto" name="_replyto" type="text" placeholder="youremail@domain.com" class="form-control input-md" required="">
+                            
+                          </div>
+                        </div>
+                        
+                        <!-- Select Basic -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="business">Business Type</label>
+                          <div class="col-md-12">
+                            <select id="business" name="business" class="form-control">
+                              <option value="Accounting/Finance">Accounting/Finance</option>
+                              <option value="Motor Services">Motor Services</option>
+                              <option value="Transport">Transport</option>
+                              <option value="Construction">Construction</option>
+                              <option value="Ground Working">Ground Working</option>
+                              <option value="Roofing">Roofing</option>
+                              <option value="Computer Software">Computer Software</option>
+                              <option value="Computer Services">Computer Services</option>
+                              <option value="Electronics">Electronics</option>
+                              <option value="Food/Drink">Food/Drink</option>
+                              <option value="Other">Other</option>
+                            </select>
+                          </div>
+                        </div>
+                        
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-12 control-label" for="otherbusiness">Other Business Type</label>  
+                          <div class="col-md-12">
+                          <input id="otherbusiness" name="otherbusiness" type="text" placeholder="Business Type" class="form-control input-md">
+                            
+                          </div>
+                        </div>
+                        
+                        <!-- Select Basic -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="paymenttype">Price Package</label>
+                          <div class="col-md-12">
+                            <select id="paymenttype" name="paymenttype" class="form-control">
+                              <option value="Pay Per Change">Pay Per Change</option>
+                              <option value="Tier 1 Monthly">Tier 1 Monthly</option>
+                              <option value="Tier 2 Monthly">Tier 2 Monthly</option>
+                            </select>
+                          </div>
+                        </div>
+                        
+                        <!-- Textarea -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="message">Your Message</label>
+                          <div class="col-md-12">                     
+                            <textarea class="form-control" id="message" name="message" placeholder="I have a business which... and I am interested in..."></textarea>
+                          </div>
+                        </div>
+                        
+                        
+                        <input type="submit" value="Send" class="btn btn-primary">
+                        </fieldset>
+                        </form>
+            </div>
             
           </div>
         </div>
-        
-        <!-- Text input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="_replyto">Email</label>  
-          <div class="col-md-4">
-          <input id="_replyto" name="_replyto" type="text" placeholder="youremail@domain.com" class="form-control input-md" required="">
-            
-          </div>
-        </div>
-        
-        <!-- Select Basic -->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="business">Business Type</label>
-          <div class="col-md-4">
-            <select id="business" name="business" class="form-control">
-              <option value="Accounting/Finance">Accounting/Finance</option>
-              <option value="Motor Services">Motor Services</option>
-              <option value="Transport">Transport</option>
-              <option value="Construction">Construction</option>
-              <option value="Ground Working">Ground Working</option>
-              <option value="Roofing">Roofing</option>
-              <option value="Computer Software">Computer Software</option>
-              <option value="Computer Services">Computer Services</option>
-              <option value="Electronics">Electronics</option>
-              <option value="Food/Drink">Food/Drink</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-        </div>
-        
-        <!-- Text input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="otherbusiness">Other Business Type</label>  
-          <div class="col-md-4">
-          <input id="otherbusiness" name="otherbusiness" type="text" placeholder="Business Type" class="form-control input-md">
-            
-          </div>
-        </div>
-        
-        <!-- Select Basic -->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="paymenttype">Price Package</label>
-          <div class="col-md-4">
-            <select id="paymenttype" name="paymenttype" class="form-control">
-              <option value="Pay Per Change">Pay Per Change</option>
-              <option value="Tier 1 Monthly">Tier 1 Monthly</option>
-              <option value="Tier 2 Monthly">Tier 2 Monthly</option>
-            </select>
-          </div>
-        </div>
-        
-        <!-- Textarea -->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="message">Your Message</label>
-          <div class="col-md-4">                     
-            <textarea class="form-control" id="message" name="message" placeholder="I have a business which... and I am interested in..."></textarea>
-          </div>
-        </div>
-        
-        <!-- Button -->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="submit">Submit</label>
-          <div class="col-md-4">
-            <button id="submit" name="submit" value="send" class="btn btn-primary">Send my Enquiry!</button>
-          </div>
-        </div>
-        
-        </fieldset>
-        </form>
+      </div>
         
 
     <!-- FOOTER START -->
@@ -560,6 +482,9 @@
                 </div>
             </div>
         </div>
+
+
+        
     </footer>
 
     <!-- SCRIPT START, jQuery, Popper, Bootstrap.... personal -->
@@ -574,4 +499,4 @@
 
     <!-- Photo by Jan Kahánek on Unsplash https://unsplash.com/photos/g3O5ZtRk2E4 -->
 </body>
-</html>
+</html>       
