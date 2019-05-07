@@ -252,7 +252,9 @@ button:focus {
   color: var(--primary-color-red)
 }
 .graphic-landing {
-    transform: scale(0.8);
+    /* transform: scale(0.8); */
+    width: 300px;
+    height: 250px;
     padding: 0;
     position: relative;
     top: 30%;
@@ -260,7 +262,9 @@ button:focus {
     margin-left: -50px;
 }
 .graphic-landing-large {
-  transform: scale(1);
+  /* transform: scale(1); */
+  width: 300px;
+  height: 250px;
   padding: 0;
   position: relative;
   top: 30%;
@@ -407,8 +411,8 @@ button:focus {
 }
 .graphic-stats {
   margin-bottom: 50px;
-  transition: all 0.8s;
-  margin-left: -500px;
+  transition: all 0.5s;
+  margin-left: -1000px;
   position: relative;
   top: -30px;
 }
@@ -450,6 +454,12 @@ button:focus {
   font-size: 1.5rem;
   text-transform: uppercase;
   text-align: center;
+}
+.pricing-per-month {
+  font-size: 0.7rem;
+  display: inline;
+  position: relative;
+  top: -15px;
 }
 .pricing-card .card-header h5 {
   font-size: 0.8rem;
@@ -593,9 +603,19 @@ button:focus {
 @media (min-width: 991px) {
   .landing h1 {
     font-size: 3rem;
+    top: 250px;
+  }
+  .landing p {
+    top: 250px;
+  }
+  .graphic-landing {
+    top: 80%;
+  }
+  .graphic-landing-large {
+    top: 80%;
   }
   .landing button {
-    top: 200px;
+    top: 310px;
   }
   /* .landing p {
     margin-top: 50px;
@@ -636,17 +656,6 @@ button:focus {
   }
   .graphic-landing-large {
     display: none;
-  }
-}
-@media (min-width: 767px) {
-  .landing p {
-    top: 90px;
-  }
-  .landing h1 {
-    top: 90px;
-  }
-  .landing button {
-    top: 120px;
   }
 }
 
