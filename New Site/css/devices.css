@@ -52,7 +52,8 @@
     content: "";
     position: absolute;
     /* CSS FOR BACKGROUND OF DEVICE */
-    background-image: linear-gradient(to left top, #e13984, #c760bc, #9882e0, #639ceb, #42afe3, #48b8df, #57c1db, #6ac9d6, #6ed1de, #72d9e7, #77e1ef, #7be9f8);
+    /* background-image: linear-gradient(to left top, #e13984, #c760bc, #9882e0, #639ceb, #42afe3, #48b8df, #57c1db, #6ac9d6, #6ed1de, #72d9e7, #77e1ef, #7be9f8); */
+    background-image: linear-gradient(to top, #f1a5c7, #d9aadd, #b9b1eb, #94b8ed, #75bde4, #6ec1e1, #6ac5dc, #6ac9d6, #6ed1de, #72d9e7, #77e1ef, #7be9f8);
     height: 160px;
     width: 254px;
     border-radius: 2px;
@@ -111,7 +112,8 @@
   .iphone .screen{
     margin: 13px 0px 0px 4px;
     /* CSS FOR iPHONE BACKGROUND CHANGE */
-    background-image: linear-gradient(to left top, #e13984, #c760bc, #9882e0, #639ceb, #42afe3, #48b8df, #57c1db, #6ac9d6, #6ed1de, #72d9e7, #77e1ef, #7be9f8);
+    /* background-image: linear-gradient(to left top, #e13984, #c760bc, #9882e0, #639ceb, #42afe3, #48b8df, #57c1db, #6ac9d6, #6ed1de, #72d9e7, #77e1ef, #7be9f8); */
+    background-image: linear-gradient(to top, #f1a5c7, #d9aadd, #b9b1eb, #94b8ed, #75bde4, #6ec1e1, #6ac5dc, #6ac9d6, #6ed1de, #72d9e7, #77e1ef, #7be9f8);
     border-radius: 2px;
     height: 84px;
     width: 54px;
