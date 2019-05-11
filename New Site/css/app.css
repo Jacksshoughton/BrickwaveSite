@@ -59,6 +59,9 @@ nav .container {
   font-size: 1.8rem;
   transition: 0.6 all;
 }
+/* .nav-item:active {
+  color: red !important;
+} */
 .nav-text {
   display: inline-block;
   font-size: 1.8rem;

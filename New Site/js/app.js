@@ -15,6 +15,18 @@
 $(document).ready(function(){
 
 
+	$('.nav-item').on("click", function(){
+		$(this).addClass("active");
+		$(this).siblings().removeClass("active");
+	});
+
+	function scrollToAnchor(element){
+		$('html,body').animate({scrollTop: element.offset().top},'slow');
+	}
+	
+	$("#feedback").click(function() {
+	   scrollToAnchor('#feedback-content');
+	});
 	
 
 	$(window).scroll(function(){
